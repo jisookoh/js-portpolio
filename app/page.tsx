@@ -1,9 +1,5 @@
-import styled from "@emotion/styled";
+import { HomeContainer } from "./components/home";
 
 export default function Home() {
-  return <S.Container></S.Container>;
-}
-
-namespace S {
-  export const Container = styled.main``;
+  return <HomeContainer></HomeContainer>;
 }
