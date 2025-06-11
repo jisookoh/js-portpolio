@@ -2,7 +2,7 @@
 
 import { ReactNode } from "react";
 import { CacheProvider } from "@emotion/react";
-import { emotionCache } from "../lib/emotion-cache";
+import { emotionCache } from "@app/lib/emotion-cache";
 
 type EmotionRegistryProps = {
   children: ReactNode;

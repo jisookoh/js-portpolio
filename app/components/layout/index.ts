@@ -1,1 +1,1 @@
-export { MaxWidthLayout } from "./MaxWidthLayout";
+export { PrimaryLayout } from "./PrimaryLayout";
