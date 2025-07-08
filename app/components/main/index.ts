@@ -1,2 +1,1 @@
-export { TextBanner } from "./TextBanner";
-export { BubblesCanvas } from "./BubblesCanvas";
+export { HeroSection } from "./HeroSection";

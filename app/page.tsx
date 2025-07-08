@@ -1,12 +1,11 @@
 import { PrimaryLayout } from "@app/components/layout";
-import { BubblesCanvas, TextBanner } from "@app/components/main";
+import { HeroSection } from "@app/components/main";
 
 export default function Home() {
   return (
-    <div>
+    <div style={{ height: "2000px" }}>
       <PrimaryLayout>
-        <BubblesCanvas />
-        <TextBanner />
+        <HeroSection />
       </PrimaryLayout>
     </div>
   );
