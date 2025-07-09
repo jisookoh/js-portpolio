@@ -10,7 +10,10 @@ export const HeroSection = () => {
     <S.SectionWrapper>
       <BubblesCanvas />
       <TextBanner />
-      <Icon name="letter" />
+      <Icon name="envelope" />
+      <Icon name="phone" />
+      <Icon name="robot" />
+      <Icon name="blog" />
     </S.SectionWrapper>
   );
 };
