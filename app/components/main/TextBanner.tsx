@@ -16,7 +16,7 @@ export const TextBanner = () => {
 };
 
 export namespace S {
-  export const TextBannerWrapper = styled.section`
+  export const TextBannerWrapper = styled.article`
     padding: 40px 0;
   `;
 
