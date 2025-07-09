@@ -1,11 +1,12 @@
 import { PrimaryLayout } from "@app/components/layout";
-import { HeroSection } from "@app/components/main";
+import { HeroSection, ProjectSection } from "@app/components/main";
 
 export default function Home() {
   return (
-    <div style={{ height: "2000px" }}>
+    <div>
       <PrimaryLayout>
         <HeroSection />
+        <ProjectSection />
       </PrimaryLayout>
     </div>
   );

@@ -3,21 +3,20 @@
 import styled from "@emotion/styled";
 import { TextBanner } from "./TextBanner";
 import { BubblesCanvas } from "./BubblesCanvas";
-import { Icon } from "@app/icons";
+import { Contact } from "./Contact";
 
 export const HeroSection = () => {
   return (
     <S.SectionWrapper>
       <BubblesCanvas />
       <TextBanner />
-      <Icon name="envelope" />
-      <Icon name="phone" />
-      <Icon name="robot" />
-      <Icon name="blog" />
+      <Contact />
     </S.SectionWrapper>
   );
 };
 
 export namespace S {
-  export const SectionWrapper = styled.section``;
+  export const SectionWrapper = styled.section`
+    padding: 40px 0;
+  `;
 }

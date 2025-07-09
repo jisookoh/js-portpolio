@@ -34,13 +34,15 @@ namespace S {
 
   export const ListOfGallery = styled.ul`
     display: flex;
-    gap: 40px;
+    gap: 32px;
     flex-wrap: wrap;
   `;
 
   export const ListOfGalleryItem = styled.li`
-    width: calc(50% - 20px);
+    width: calc(50% - 16px);
     height: 400px;
-    background-color: ${Colors.Black};
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
   `;
 }

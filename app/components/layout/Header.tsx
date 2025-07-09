@@ -24,7 +24,6 @@ namespace S {
     justify-content: space-between;
     position: sticky;
     top: 0;
-    left: 0;
     width: 100%;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
   `;

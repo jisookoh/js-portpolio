@@ -19,12 +19,12 @@ export const PrimaryLayout = ({ children }: PrimaryLayoutProps) => {
 };
 
 namespace S {
-  export const Container = styled.main`
+  export const Container = styled.div`
     background-color: ${Colors.White};
     color: ${Colors.DefaultTextColor};
   `;
 
-  export const MaxWidthWrapper = styled.div`
+  export const MaxWidthWrapper = styled.main`
     max-width: 960px;
     width: 100%;
     margin: 0 auto;
