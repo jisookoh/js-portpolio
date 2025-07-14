@@ -2,11 +2,11 @@
 
 import styled from "@emotion/styled";
 import { useRef } from "react";
-import { Colors } from "@app/styles";
-import { useIntersectionObserver } from "@app/hooks";
+import { useIntersectionObserver, useModal } from "@app/hooks";
 
 export const ProjectLists = () => {
   const sectionRef = useRef<HTMLUListElement>(null);
+  const { openModal, closeModal } = useModal();
 
   useIntersectionObserver({
     targetRef: sectionRef,
@@ -19,9 +19,16 @@ export const ProjectLists = () => {
     once: false,
   });
 
+  const onClick = () => {
+    openModal("confirm", {
+      onConfirm: () => console.log("확인"),
+      onClose: (id: string) => closeModal(id),
+    });
+  };
+
   return (
     <S.ListOfGallery ref={sectionRef}>
-      <S.ListOfGalleryItem></S.ListOfGalleryItem>
+      <S.ListOfGalleryItem onClick={onClick}></S.ListOfGalleryItem>
       <S.ListOfGalleryItem></S.ListOfGalleryItem>
       <S.ListOfGalleryItem></S.ListOfGalleryItem>
       <S.ListOfGalleryItem></S.ListOfGalleryItem>
