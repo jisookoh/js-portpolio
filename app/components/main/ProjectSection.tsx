@@ -1,17 +1,25 @@
 "use client";
 
-import { Typography } from "@app/styles";
 import styled from "@emotion/styled";
+import { useState } from "react";
+import { Typography } from "@app/styles";
 import { ProjectLists } from "./ProjectLists";
+import { TabButtons } from "./TabButtons";
 
 interface ProjectSectionProps {
   title?: string;
 }
 
 export const ProjectSection = ({ title = "Projects" }: ProjectSectionProps) => {
+  const [selectedRole, setSelectedRole] = useState<number>(0);
+
   return (
     <S.ProjectWrapper>
       <S.Title>{title}</S.Title>
+      <TabButtons
+        selectedRole={selectedRole}
+        setSelectedRole={setSelectedRole}
+      />
       <ProjectLists />
     </S.ProjectWrapper>
   );
