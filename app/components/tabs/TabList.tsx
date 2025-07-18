@@ -8,7 +8,7 @@ interface TabListProps {
 }
 
 export const TabList = ({ children, activeTab, onClick }: TabListProps) => (
-  <S.TabWrapper role="tablist">
+  <S.TabWrapper>
     {Children.map(children, (child, idx) => {
       if (isValidElement(child)) {
         const tabProps = {

@@ -19,13 +19,13 @@ namespace S {
     ${Typography.XSmall};
     cursor: pointer;
     transition: all 0.2s ease-in-out;
+    border-radius: 10px;
 
     ${({ isActive }) =>
       isActive
         ? `
             color: ${Colors.White};
             background-color: ${Colors.Black};
-            border-radius: 10px 10px 0 0;
           `
         : `
             &:hover {
