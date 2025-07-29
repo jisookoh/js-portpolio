@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 import { withOverlay } from "./withOverlay";
+import { Colors, Typography } from "@app/styles";
 
 interface ConfirmModalProps {
   title?: string;
@@ -39,18 +40,8 @@ const ConfirmModalComponent = ({
 export const ConfirmModal = withOverlay(ConfirmModalComponent);
 
 export namespace S {
-  export const Overlay = styled.div`
-    position: fixed;
-    inset: 0;
-    background-color: rgba(0, 0, 0, 0.4);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 9999;
-  `;
-
   export const ModalContainer = styled.div`
-    background: #ffffff;
+    background: ${Colors.White};
     border-radius: 8px;
     padding: 24px;
     width: 100%;
@@ -59,15 +50,11 @@ export namespace S {
   `;
 
   export const Title = styled.h2`
-    font-size: 1.25rem;
-    font-weight: bold;
-    margin-bottom: 16px;
+    ${Typography.Medium};
   `;
 
   export const Message = styled.p`
-    font-size: 1rem;
-    margin-bottom: 24px;
-    color: #333;
+    ${Typography.Small};
   `;
 
   export const ButtonGroup = styled.div`
@@ -79,7 +66,6 @@ export namespace S {
   export const Button = styled.button<{ variant?: "primary" | "secondary" }>`
     padding: 8px 16px;
     border-radius: 4px;
-    font-size: 0.95rem;
     font-weight: 500;
     cursor: pointer;
     border: none;

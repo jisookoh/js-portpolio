@@ -4,9 +4,11 @@ import { useMemo } from "react";
 import { useModal } from "@app/hooks";
 import { ModalType } from "./types";
 import { ConfirmModal } from "./ui/ConfirmModal";
+import { InformationModal } from "./ui/InformationModal";
 
 const MODAL_COMPONENTS: Record<ModalType, React.ComponentType<any>> = {
   confirm: ConfirmModal,
+  information: InformationModal,
 };
 
 export const ModalOutlet = () => {

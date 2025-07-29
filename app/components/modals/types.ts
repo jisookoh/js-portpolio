@@ -1,4 +1,4 @@
-export type ModalType = "confirm";
+export type ModalType = "confirm" | "information";
 
 export interface ModalInstance {
   id: string;

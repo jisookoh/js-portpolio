@@ -29,6 +29,12 @@ li {
   list-style: none;
 }
 
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;

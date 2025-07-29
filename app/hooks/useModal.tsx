@@ -7,6 +7,14 @@ let modalStore: ModalInstance[] = [];
 
 const generateId = () => `modal_${Date.now()}`;
 
+const updateScrollLock = () => {
+  if (modalStore.length > 0) {
+    document.documentElement.style.overflow = "hidden";
+  } else {
+    document.documentElement.style.overflow = "";
+  }
+};
+
 export const useModal = () => {
   const [modals, setModals] = useState<ModalInstance[]>(modalStore);
 
@@ -18,6 +26,8 @@ export const useModal = () => {
     for (const subscriber of subscribers) {
       subscriber([...modalStore]);
     }
+
+    updateScrollLock();
   };
 
   const open = (type: ModalType, props: any) => {

@@ -22,7 +22,7 @@ export const ProjectLists = () => {
   });
 
   const onClick = () => {
-    openModal("confirm", {
+    openModal("information", {
       onConfirm: () => console.log("확인"),
       onClose: (id: string) => closeModal(id),
     });
